@@ -1,0 +1,38 @@
+name: Docker Image CI Pokenea
+
+on:
+  push:
+    # Ejecutar en cada push a la rama 'main'
+    branches: [ main ]
+  pull_request:
+    # Ejecutar en cada pull request a la rama 'main'
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        # Obtiene el código del repositorio
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        # Utiliza secretos de GitHub para las credenciales de Docker Hub
+        env:
+          DOCKER_USER: ${{ secrets.DOCKERHUB_USER }}
+          DOCKER_PASS: ${{ secrets.DOCKERHUB_PASS }}
+        run: |
+          echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
+
+      - name: Build Docker image
+        # CUIDADO: Aquí se corrige la ruta.
+        # Usa el contexto de la raíz (.), donde se encuentra el Dockerfile
+        # y etiqueta la imagen con el nombre correcto: lacastrilp/pokedex-flask-aws-docker
+        run: |
+          docker build . -t lacastrilp/pokedex-flask-aws-docker:latest
+
+      - name: Push Docker image
+        # Envía la imagen etiquetada a Docker Hub
+        run: |
+          docker push lacastrilp/pokedex-flask-aws-docker:latest

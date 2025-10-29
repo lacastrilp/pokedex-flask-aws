@@ -15,7 +15,7 @@ POKENEAS = [
         "nombre": "La Montañera Veloz",
         "altura": "1.60m",
         "habilidad": "Bajar lomas sin cansarse",
-        "imagen": "negro.png", # Nombre de tu imagen en S3
+        "imagen": "negro.jpg", # Nombre de tu imagen en S3
         "frase_filosofica": "Despacio voy, porque de afán no queda sino el cansancio."
     },
     {
@@ -23,7 +23,7 @@ POKENEAS = [
         "nombre": "El Silletero",
         "altura": "1.80m",
         "habilidad": "Cargar flores con precisión",
-        "imagen": "morado.jpg",
+        "imagen": "morado.png",
         "frase_filosofica": "Con paciencia y saliva, el elefante se monta en la hormiga."
     },
     {
@@ -31,7 +31,7 @@ POKENEAS = [
         "nombre": "La Guasca Mística",
         "altura": "1.65m",
         "habilidad": "Adivinar el futuro con arepas",
-        "imagen": "rosado.jpg",
+        "imagen": "rosado.png",
         "frase_filosofica": "La arepa es como la vida: cada mordisco es un nuevo comienzo."
     },
     {
@@ -39,7 +39,7 @@ POKENEAS = [
         "nombre": "El Enyucado",
         "altura": "1.70m",
         "habilidad": "Resistencia extrema a los chismes",
-        "imagen": "gris.png",
+        "imagen": "gris.jpg",
         "frase_filosofica": "Más vale solo que mal acompañado... pero con café, mejor."
     },
     {
@@ -63,7 +63,7 @@ POKENEAS = [
         "nombre": "El Tintero de la Esquina",
         "altura": "1.78m",
         "habilidad": "Preparar el tinto perfecto en cualquier momento",
-        "imagen": "amarillo.jpg",
+        "imagen": "amarillo.png",
         "frase_filosofica": "Un buen tinto arregla cualquier problema."
     },
     {
@@ -71,7 +71,7 @@ POKENEAS = [
         "nombre": "La Comelona de Empanadas",
         "altura": "1.63m",
         "habilidad": "Comer empanadas sin quemarse la lengua",
-        "imagen": "cafe.jpg",
+        "imagen": "cafe.png",
         "frase_filosofica": "Empanada que no se come, se pierde."
     },
     {
@@ -79,7 +79,7 @@ POKENEAS = [
         "nombre": "El Conductor de Chiva",
         "altura": "1.85m",
         "habilidad": "Maniobrar en cualquier terreno con música a todo volumen",
-        "imagen": "azul.png",
+        "imagen": "azul.jpg",
         "frase_filosofica": "El camino es largo, pero la gozadera es eterna."
     }
 ]
